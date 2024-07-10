@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../../src/components/Header/Header";
 import Growimg from "../../assets/images/Growup Landing.png";
 import GrowupContext from "./GrowupContext";
 import Footer from "../../components/Footer/Footer";
+import Loader from "../../../src/components/Loader/Loader";
 const Growup = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (isLoading) {
+    return <Loader projectName="Grow Up" />;
+  }
   return (
     <div className="growup">
       <div className="grow-header h-[120vh] flex flex-col justify-between">

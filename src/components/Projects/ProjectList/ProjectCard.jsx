@@ -9,7 +9,6 @@ const ProjectCard = ({ project, index }) => {
     if (header === "Grow Up") {
       return "/projects/growup";
     }
-    // Add more conditions for other projects
     return "#";
   };
 
