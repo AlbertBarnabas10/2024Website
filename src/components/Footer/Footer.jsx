@@ -8,15 +8,15 @@ const Footer = () => {
   const data = [
     {
       name: "Behance",
-      href: "/",
+      href: "https://www.behance.net/albertbarnabas10",
     },
     {
       name: "Linkedin",
-      href: "/",
+      href: "https://www.linkedin.com/in/albert-barnabas/",
     },
     {
       name: "Github",
-      href: "/",
+      href: "https://www.github.com/AlbertBarnabas10",
     },
   ];
   return (
